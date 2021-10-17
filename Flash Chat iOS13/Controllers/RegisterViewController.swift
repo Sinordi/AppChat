@@ -2,8 +2,7 @@
 //  RegisterViewController.swift
 //  Flash Chat iOS13
 //
-//  Created by Angela Yu on 21/10/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
+//  Created by Сергей Кривошапко on 15.06.2021.
 //
 
 import UIKit
@@ -13,6 +12,10 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
+    
+    deinit {
+        print("RegisterViewController was deinit")
+    }
     
     @IBAction func registerPressed(_ sender: UIButton) {
         
